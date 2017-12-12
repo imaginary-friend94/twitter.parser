@@ -82,14 +82,12 @@ def save_json(dialog_queue, num_note_json):
             json.dump(dict_data, outfile, ensure_ascii=False)
         n_mess += 1
 
-
-
 user_list = []
 qa_list = []
 HOST = "https://twitter.com"
 num_note_json = 100
 max_users = 500
-every_iter = 1 * 60
+every_iter = 60 * 60
 
 user_list += ["/omruruch", "/Kaspersky_ru‏", "/fuckingsun"]
 print(os.listdir(os.getcwd()))
